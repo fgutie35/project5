@@ -13,6 +13,7 @@ const phone = faker.phone.number({style: 'national'})
 
 <template>
     <!-- {{ fullname }} <br /> -->
+    <RouterLink :to="{name: 'CardDetails', params: {id: username}}">
     <div class="border border-gray-900 rounded-lg shadow bg-gray-300 h-full">
         <img :src="faker.image.avatar({width: 640, height: 480})" class="rounded-t-xl"/>
         <div>
@@ -23,4 +24,5 @@ const phone = faker.phone.number({style: 'national'})
             <p class="mb-2 font-normal text-gray-800 px-3">Phone: {{ phone }}</p>            
         </div>
     </div>
+    </RouterLink>    
 </template>
