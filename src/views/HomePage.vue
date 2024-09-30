@@ -6,4 +6,5 @@ import MainCards from '@/components/MainCards.vue';
 
 <template>
   <MainCards></MainCards>
+  
 </template>
